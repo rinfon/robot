@@ -54,6 +54,7 @@ public class Robot {
     }
 
     public Group group() {
+        mGroupList.clear();
         Group mGroup = new Group(this);
         mGroupList.put(String.valueOf(mGroup.hashCode()), mGroup);
         return mGroup;
