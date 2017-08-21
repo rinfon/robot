@@ -46,9 +46,9 @@ final IJob job = new IJob()
 	}         
 };          
 Robot.getInstance().group()
-					.add(job)
-  					.add(new IJob() {
-                 		@Override
+.add(job)
+.add(new IJob() {
+                 	@Override
                      	public Object job() {
 						Log.i(TAG, "job 2 start sleep 2s"); 
 							try { 							
