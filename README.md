@@ -46,10 +46,9 @@ final IJob job = new IJob()
 	}         
 };          
 Robot.getInstance().group()
-.add(job)
-.add(new IJob() {
-                 	@Override
-                     	public Object job() {
+			.add(job)
+			.add(new IJob() {
+                @Override     						public Object job() {
 						Log.i(TAG, "job 2 start sleep 2s"); 
 							try { 							
 								Thread.sleep(2000); 
@@ -61,10 +60,8 @@ Robot.getInstance().group()
 								return new JSONObject("{'name':'job 2'}"); 							} catch (JSONException e) { 
 									e.printStackTrace(); 													return null; 
 							} 						
-						} 
-						}) 
-						.add(new IJob() {                     
-							@Override 							
+						} 				}) 				.add(new IJob() {                     
+					@Override 							
 							public Object job() { 
 								Log.i(TAG, "job 3 start sleep 3s");                         
 								try {                             
